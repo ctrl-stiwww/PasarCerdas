@@ -1,0 +1,90 @@
+{
+  "model_name": "Random Forest | global | ratio",
+  "algorithm": "Random Forest",
+  "strategy": "global",
+  "target_mode": "ratio",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 18,
+    "min_samples_leaf": 5,
+    "max_features": 0.6
+  },
+  "seed": 42,
+  "trained_at": "2026-11-11T10:01:12",
+  "train_period": [
+    "2016-10-01",
+    "2023-12-01"
+  ],
+  "validation_period": [
+    "2024-01-01",
+    "2024-12-01"
+  ],
+  "test_period": [
+    "2025-01-01",
+    "2026-09-01"
+  ],
+  "rows": {
+    "train": 66737,
+    "validation": 9925,
+    "test": 27798
+  },
+  "last_observed_month": "2026-09-01",
+  "supported_commodities": {
+    "eggs": "Telur",
+    "garlic": "Bawang Putih",
+    "meat_chicken": "Daging Ayam",
+    "oil": "Minyak Nabati",
+    "onions": "Bawang Merah",
+    "rice": "Beras",
+    "sugar": "Gula"
+  },
+  "features": [
+    "commodity",
+    "geo_id",
+    "adm1_name",
+    "year",
+    "month",
+    "price_lag_1",
+    "price_lag_2",
+    "price_lag_3",
+    "price_lag_12",
+    "rolling_mean_3",
+    "rolling_mean_6",
+    "n_obs_last6",
+    "mom_1",
+    "dev_roll3",
+    "dev_roll6"
+  ],
+  "selection_rule": "MAE validasi (2024) terendah di antara seluruh kombinasi model; data test tidak dipakai memilih.",
+  "metrics_validation": {
+    "MAE": 1453.2478381929247,
+    "RMSE": 2639.841535011699,
+    "R2": 0.939866867678164,
+    "MAPE_%": 4.550388944780208
+  },
+  "metrics_test": {
+    "MAE": 1904.1344381092122,
+    "RMSE": 3599.6700329184096,
+    "R2": 0.9093288981931898,
+    "MAPE_%": 5.15575485048171
+  },
+  "naive_baseline_test": {
+    "MAE": 1838.0512986545796,
+    "RMSE": 3725.779638694306,
+    "R2": 0.9028645317819249,
+    "MAPE_%": 4.9116704709355075
+  },
+  "alternative_models": {
+    "Linear Regression": "Linear Regression | global | ratio",
+    "Random Forest": "Random Forest | global | ratio",
+    "XGBoost": "XGBoost | global | ratio"
+  },
+  "library_versions": {
+    "python": "3.12.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  }
+}

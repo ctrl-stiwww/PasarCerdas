@@ -1,0 +1,14 @@
+# Versi pustaka ML dipin agar file model (.pkl) dapat dimuat konsisten.
+# Membutuhkan Python 3.11 - 3.13 (64-bit).
+numpy>=2.0
+pandas>=2.2
+scikit-learn==1.9.1
+xgboost==3.2.0
+joblib>=1.4
+matplotlib>=3.8
+plotly>=5.24
+streamlit>=1.50
+# hanya untuk menjalankan notebook (opsional):
+jupyter>=1.0
+nbconvert>=7.0
+ipykernel>=6.0

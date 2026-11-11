@@ -1,0 +1,30 @@
+== 1. Muat & preprocessing ==
+== 2. EDA ==
+Bulan observasi terakhir: 2026-09-01
+== 3. Feature engineering ==
+Baris siap modeling: 104,460
+== 4. Training & tuning ==
+Split -> train 66,737 (2016-10-01..2023-12-01) | val 9,925 (2024-01-01..2024-12-01) | test 27,798 (2025-01-01..2026-09-01)
+  [level|global  |linear] {} val MAE=1,684.2 (1s)
+  [level|global  |rf    ] {'n_estimators': 100, 'max_depth': 12, 'min_samples_leaf': 10, 'max_features': 0.6} val MAE=1,524.3 (31s)
+  [level|global  |rf    ] {'n_estimators': 100, 'max_depth': 18, 'min_samples_leaf': 5, 'max_features': 0.6} val MAE=1,540.6 (37s)
+  [level|global  |xgb   ] {'n_estimators': 300, 'max_depth': 4, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,514.5 (2s)
+  [level|global  |xgb   ] {'n_estimators': 400, 'max_depth': 6, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,540.9 (4s)
+  [level|global  |xgb   ] {'n_estimators': 600, 'max_depth': 8, 'learning_rate': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,521.8 (9s)
+  [level|separate|linear] {} val MAE=1,877.9 (1s)
+  [level|separate|rf    ] {'n_estimators': 100, 'max_depth': 12, 'min_samples_leaf': 10, 'max_features': 0.6} val MAE=1,550.5 (23s)
+  [level|separate|xgb   ] {'n_estimators': 300, 'max_depth': 4, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,629.3 (3s)
+  [ratio|global  |linear] {} val MAE=1,577.7 (0s)
+  [ratio|global  |rf    ] {'n_estimators': 100, 'max_depth': 12, 'min_samples_leaf': 10, 'max_features': 0.6} val MAE=1,455.7 (35s)
+  [ratio|global  |rf    ] {'n_estimators': 100, 'max_depth': 18, 'min_samples_leaf': 5, 'max_features': 0.6} val MAE=1,453.2 (42s)
+  [ratio|global  |xgb   ] {'n_estimators': 300, 'max_depth': 4, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,545.4 (2s)
+  [ratio|global  |xgb   ] {'n_estimators': 400, 'max_depth': 6, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,535.0 (4s)
+  [ratio|global  |xgb   ] {'n_estimators': 600, 'max_depth': 8, 'learning_rate': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,499.0 (11s)
+  [ratio|separate|linear] {} val MAE=1,846.5 (1s)
+  [ratio|separate|rf    ] {'n_estimators': 100, 'max_depth': 18, 'min_samples_leaf': 5, 'max_features': 0.6} val MAE=1,478.3 (32s)
+  [ratio|separate|xgb   ] {'n_estimators': 600, 'max_depth': 8, 'learning_rate': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8} val MAE=1,558.3 (33s)
+Model terpilih (MAE validasi terendah): Random Forest | global | ratio
+== 5. Evaluasi ==
+== 6. Simpan model ==
+Verifikasi load model: prediksi konsisten (OK)
+Selesai dalam 305 detik

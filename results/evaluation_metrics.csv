@@ -1,0 +1,27 @@
+model,algo,strategy,target_mode,split,params,n,MAE,RMSE,R2,MAPE_%
+Linear Regression | global | level,Linear Regression,global,level,validation,{},9925,1684.246513843284,2796.697746721676,0.9325084851055372,5.681412284416895
+Linear Regression | global | level,Linear Regression,global,level,test,{},27798,2040.559865906865,3602.5450019566533,0.9091840067414666,5.898479836158337
+Random Forest | global | level,Random Forest,global,level,validation,"{""n_estimators"": 100, ""max_depth"": 12, ""min_samples_leaf"": 10, ""max_features"": 0.6}",9925,1524.2701652745786,2746.6848525800683,0.9349007813170542,4.855892810858857
+Random Forest | global | level,Random Forest,global,level,test,"{""n_estimators"": 100, ""max_depth"": 12, ""min_samples_leaf"": 10, ""max_features"": 0.6}",27798,1979.5763197259685,3612.064031131397,0.9087034452496864,5.579350068207259
+XGBoost | global | level,XGBoost,global,level,validation,"{""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.05, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",9925,1514.485371449937,2696.8582849630525,0.9372412387740298,4.783205588886275
+XGBoost | global | level,XGBoost,global,level,test,"{""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.05, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",27798,1996.3204431158492,3662.279073092812,0.9061473848073611,5.523516705722808
+Linear Regression | separate | level,Linear Regression,separate,level,validation,{},9925,1877.9447235535968,3380.4361993152106,0.9013939416777003,6.151984269853764
+Linear Regression | separate | level,Linear Regression,separate,level,test,{},27798,1984.7942963592075,3546.790871502508,0.9119732491226078,5.50886477249345
+Random Forest | separate | level,Random Forest,separate,level,validation,"{""n_estimators"": 100, ""max_depth"": 12, ""min_samples_leaf"": 10, ""max_features"": 0.6}",9925,1550.5439992420643,2666.0025415540777,0.9386691152943716,5.034559810574251
+Random Forest | separate | level,Random Forest,separate,level,test,"{""n_estimators"": 100, ""max_depth"": 12, ""min_samples_leaf"": 10, ""max_features"": 0.6}",27798,2121.3688936251756,3771.5942472531665,0.9004609624310038,6.099940530780003
+XGBoost | separate | level,XGBoost,separate,level,validation,"{""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.05, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",9925,1629.3042053683878,2724.849745003982,0.9359316956955289,5.334972495460206
+XGBoost | separate | level,XGBoost,separate,level,test,"{""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.05, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",27798,2272.7547343151373,3954.3515571755843,0.8905806671912048,6.656972210106983
+Linear Regression | global | ratio,Linear Regression,global,ratio,validation,{},9925,1577.7465538847573,2735.635593402662,0.9354234851549007,5.061293379465518
+Linear Regression | global | ratio,Linear Regression,global,ratio,test,{},27798,2015.2614061734384,3657.433876370587,0.9063955546314217,5.630432202645814
+Random Forest | global | ratio,Random Forest,global,ratio,validation,"{""n_estimators"": 100, ""max_depth"": 18, ""min_samples_leaf"": 5, ""max_features"": 0.6}",9925,1453.2478381929247,2639.841535011699,0.939866867678164,4.550388944780208
+Random Forest | global | ratio,Random Forest,global,ratio,test,"{""n_estimators"": 100, ""max_depth"": 18, ""min_samples_leaf"": 5, ""max_features"": 0.6}",27798,1904.1344381092122,3599.6700329184096,0.9093288981931898,5.15575485048171
+XGBoost | global | ratio,XGBoost,global,ratio,validation,"{""n_estimators"": 600, ""max_depth"": 8, ""learning_rate"": 0.03, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",9925,1499.0391826295483,2653.1815002646954,0.9392575881392651,4.697389334470946
+XGBoost | global | ratio,XGBoost,global,ratio,test,"{""n_estimators"": 600, ""max_depth"": 8, ""learning_rate"": 0.03, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",27798,1973.8767912751678,3654.8037719471754,0.9065301303778274,5.406222111178593
+Linear Regression | separate | ratio,Linear Regression,separate,ratio,validation,{},9925,1846.457080119075,3234.623623012686,0.9097170753711322,5.915968042845137
+Linear Regression | separate | ratio,Linear Regression,separate,ratio,test,{},27798,2081.1985690201423,3707.8359973368256,0.9037979025386776,5.720227061891924
+Random Forest | separate | ratio,Random Forest,separate,ratio,validation,"{""n_estimators"": 100, ""max_depth"": 18, ""min_samples_leaf"": 5, ""max_features"": 0.6}",9925,1478.297058357856,2606.0143561137766,0.9413980970370824,4.701520454320097
+Random Forest | separate | ratio,Random Forest,separate,ratio,test,"{""n_estimators"": 100, ""max_depth"": 18, ""min_samples_leaf"": 5, ""max_features"": 0.6}",27798,2019.6211794214294,3706.9387656118693,0.9038444553692122,5.6409795702092165
+XGBoost | separate | ratio,XGBoost,separate,ratio,validation,"{""n_estimators"": 600, ""max_depth"": 8, ""learning_rate"": 0.03, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",9925,1558.2925204400149,2642.6473903500687,0.9397389701995452,5.048298984531108
+XGBoost | separate | ratio,XGBoost,separate,ratio,test,"{""n_estimators"": 600, ""max_depth"": 8, ""learning_rate"": 0.03, ""subsample"": 0.8, ""colsample_bytree"": 0.8}",27798,2104.701815391498,3712.9247564904326,0.9035336593297597,6.046982649881026
+Naive Forecast,Naive,-,-,validation,{},9925,1512.8572523929472,3067.419539431566,0.9188096393266748,4.59676864719213
+Naive Forecast,Naive,-,-,test,{},27798,1838.0512986545796,3725.779638694306,0.9028645317819249,4.9116704709355075
