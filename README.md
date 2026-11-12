@@ -261,7 +261,7 @@ python retrain.py
 | Masalah | Solusi |
 |---|---|
 | Python belum terinstal | Instal Python 3.11–3.13 dan aktifkan opsi Add to PATH. |
-| Versi Python tidak didukung | Gunakan Python 3.11–3.13. |
+| Versi Python tidak didukung | Gunakan Python 3.12.x |
 | Instalasi dependensi gagal | Periksa koneksi internet atau proxy. Hapus folder `.venv`, lalu jalankan `run.bat` kembali. |
 | Berkas penting tidak ditemukan | Pastikan ZIP sudah diekstrak secara penuh. |
 | Port 8501 sedang digunakan | Jalankan Streamlit menggunakan port alternatif. |
