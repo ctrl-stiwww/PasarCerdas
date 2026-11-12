@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Daging ayam">
+<path d="M55 55L82 82" stroke="#2B4208" stroke-width="15" stroke-linecap="round"/>
+<path d="M55 55L82 82" stroke="#F4FFFC" stroke-width="8" stroke-linecap="round"/>
+<circle cx="82" cy="78" r="6" fill="#F4FFFC" stroke="#2B4208" stroke-width="2.5"/>
+<circle cx="87" cy="86" r="6" fill="#F4FFFC" stroke="#2B4208" stroke-width="2.5"/>
+<path d="M30 42C26 24 40 12 56 14c16 2 24 16 20 30-3 10-10 14-16 18-8 6-18 8-22 6-6-4-7-16-8-26z" fill="#F5A27E" stroke="#2B4208" stroke-width="3"/>
+<path d="M40 30c3-6 9-9 14-9" fill="none" stroke="#F4FFFC" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</svg>

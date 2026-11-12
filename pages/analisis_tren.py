@@ -7,7 +7,7 @@ from src.ui import get_national, page_header, style_fig, show, fmt_month, help_b
 
 
 def render():
-    page_header("Tren Harga", "Apakah harga cenderung naik atau turun? Bahan apa yang paling sering berubah-ubah?", "📈")
+    page_header("Tren Harga", "Apakah harga cenderung naik atau turun? Bahan apa yang paling sering berubah-ubah?")
     nat = get_national()
     nat = nat[nat.date >= "2020-01-01"].copy()
     nat["mom"] = nat.groupby("commodity")["price"].pct_change() * 100
@@ -49,7 +49,7 @@ def render():
     with c1:
         f = px.bar(e.dropna(subset=["mom"]), x="date", y="mom", title=f"Perubahan bulanan {one} (%)",
                    labels={"mom": "% MoM", "date": ""}, color=(e.dropna(subset=["mom"])["mom"] > 0).map({True: "Naik", False: "Turun"}),
-                   color_discrete_map={"Naik": "#C0504D", "Turun": "#1D7657"})
+                   color_discrete_map={"Naik": "#E8734A", "Turun": "#4D7111"})
         show(style_fig(f, 340))
     with c2:
         y = e.dropna(subset=["yoy"])

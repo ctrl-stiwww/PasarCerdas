@@ -6,7 +6,7 @@ from src.ui import get_long, get_obs, last_obs_month, page_header, idr, fmt_mont
 
 
 def render():
-    page_header("Cek Harga", "Cari harga bahan pokok di daerahmu: pilih bahan, lokasi, dan periode.", "🏷️")
+    page_header("Cek Harga", "Cari harga bahan pokok di daerahmu: pilih bahan, lokasi, dan periode.")
     obs, long = get_obs(), get_long()
     names = list(COMMODITIES.values())
     f = st.columns(5)

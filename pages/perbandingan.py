@@ -6,7 +6,7 @@ from src.ui import get_obs, last_obs_month, page_header, idr, fmt_month, style_f
 
 
 def render():
-    page_header("Bandingkan Wilayah", "Di mana harga paling murah dan paling mahal? Bandingkan provinsi, kota, dan pasar pada bulan yang sama.", "🗺️")
+    page_header("Bandingkan Wilayah", "Di mana harga paling murah dan paling mahal? Bandingkan provinsi, kota, dan pasar pada bulan yang sama.")
     obs, last = get_obs(), last_obs_month()
     months = sorted(obs.date.unique(), reverse=True)
     months = [pd.Timestamp(m) for m in months if (obs[obs.date == m].geo_id.nunique() >= 100)]
@@ -47,7 +47,7 @@ def render():
         else:
             fig = px.scatter_map(m, lat="lat", lon="lon", color="price_clean", hover_name="mkt_name",
                                  hover_data={"adm1_name": True, "price_clean": ":,.0f", "lat": False, "lon": False},
-                                 color_continuous_scale=["#E9F0EA", "#1D7657", "#142D4E"], zoom=3.3,
+                                 color_continuous_scale=["#EEF9C9", "#7FA41C", "#2B4208"], zoom=3.3,
                                  center={"lat": -2.5, "lon": 118}, map_style="open-street-map",
                                  labels={"price_clean": "IDR/kg"})
             show(style_fig(fig, 520))

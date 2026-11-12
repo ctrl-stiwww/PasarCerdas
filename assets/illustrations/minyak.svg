@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Minyak nabati">
+<rect x="40" y="14" width="20" height="12" rx="3" fill="#2B4208"/>
+<rect x="45" y="25" width="10" height="13" fill="#4D7111" stroke="#2B4208" stroke-width="3"/>
+<rect x="30" y="36" width="40" height="52" rx="14" fill="#91EAAF" stroke="#2B4208" stroke-width="3"/>
+<rect x="37" y="56" width="26" height="22" rx="6" fill="#F4FFFC" stroke="#2B4208" stroke-width="2.5"/>
+<path d="M50 60c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z" fill="#C3E956" stroke="#2B4208" stroke-width="2"/>
+<path d="M38 44v8" stroke="#F4FFFC" stroke-width="3" stroke-linecap="round"/>
+</svg>

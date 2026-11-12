@@ -9,7 +9,7 @@ from src.ui import page_header, insight, help_box, read_csv_result, style_fig, s
 
 
 def render():
-    page_header("Seberapa Akurat Prediksinya?", "Hasil uji model pada data yang belum pernah dilihatnya (Januari 2025 – September 2026).", "🧪")
+    page_header("Seberapa Akurat Prediksinya?", "Hasil uji model pada data yang belum pernah dilihatnya (Januari 2025 – September 2026).")
     meta = load_metadata()
     res = read_csv_result("evaluation_metrics.csv")
     test = res[res.split == "test"].copy(); val = res[res.split == "validation"]
@@ -43,7 +43,7 @@ def render():
         d = (test if split == "test" else val)[["model", "algo", "strategy", "target_mode", "MAE", "RMSE", "R2", "MAPE_%"]]
         d = d.sort_values("MAE").reset_index(drop=True)
         d.insert(0, "Peringkat", range(1, len(d) + 1))
-        d["Keterangan"] = np.where(d.model == best, "✅ terpilih", np.where(d.model == "Naive Forecast", "baseline", ""))
+        d["Keterangan"] = np.where(d.model == best, "terpilih", np.where(d.model == "Naive Forecast", "baseline", ""))
         view = d.rename(columns={"model": "Model", "algo": "Algoritma", "strategy": "Strategi", "target_mode": "Target",
                                  "MAE": "MAE (Rp/kg)", "RMSE": "RMSE (Rp/kg)", "R2": "R²", "MAPE_%": "MAPE (%)"})
         st.caption("Diurutkan dari MAE terkecil. Model terpilih ditentukan dari MAE **validasi**; data uji tidak dipakai untuk memilih.")
